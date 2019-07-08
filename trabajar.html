@@ -112,38 +112,38 @@
             </div>
 
 
-            <form action="">
+            <form action="#" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" class="form-control" placeholder="Nombre" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Nombre'" id="nombre" required>
+                        onblur="this.placeholder = 'Nombre'" id="nombre" name="nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input type="text" class="form-control" placeholder="Dirección de correo electrónico"
                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dirección de correo electrónico'"
-                        id="email" required>
+                        id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Teléfono:</label>
                     <input type="text" class="form-control" placeholder="Teléfono" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Teléfono'" id="telefono" required>
+                        onblur="this.placeholder = 'Teléfono'" id="telefono" name="telefono" required>
                 </div>
                 <div class="form-group">
                     <label for="horario">Horario de contacto:</label>
                     <input type="text" class="form-control" placeholder="Horario de contacto"
                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Horario de contacto'" id="horario"
-                        required>
+                        name="horario" required>
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea name="message" cols="20" rows="7" class="form-control" placeholder="Mensaje"
+                    <textarea cols="20" rows="7" class="form-control" placeholder="Mensaje"
                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensaje'" id="mensaje"
-                        required></textarea>
+                        name="mensaje" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="cv">Adjunte su CV:</label>
-                    <input type="file" class="form-control-file" id="cv">
+                    <input type="file" class="form-control-file" id="cv" name="cv">
                 </div>
                 <input type="submit" class="template-btn" value="Enviar" id="enviar" onsubmit="return validarNombre();">
             </form>
@@ -164,8 +164,8 @@
                             <h3 class="mb-4">Nuestros Productos</h3>
                             <ul>
                                 <li class="mb-2">Equipos de Laboratorio</li>
-                                <li class="mb-2"><a href="productos.html">Consumibles</a></li>
-                                <li class="mb-2"><a href="productos.html">Servicios</a></li>
+                                <li class="mb-2">Consumibles</li>
+                                <li class="mb-2">Servicios</li>
                             </ul>
                         </div>
                     </div>
@@ -181,7 +181,11 @@
                             <h3 class="mb-4">Contacto</h3>
                             <p>P.I "El Juncal", Nave 4-3</p>
                             <p>Carretera Soria, km 9</p>
-                            <p>26120 Albelda de Iregua</p>
+                            <p class="mb-4">26120 Albelda de Iregua</p>
+                            <h3>Teléfono</h3>
+                            <p class="mb-4">+34 941 20 20 10</p>
+                            <h3>e-mail</h3>
+                            <p>info@todoparalaboratorio.com</p>
                         </div>
                     </div>
                 </div>
